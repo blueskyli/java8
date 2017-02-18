@@ -3,14 +3,14 @@ package com.blueskyli.lambda;
 /**
  * @Description: lambda
  * @author Jack
- * @date 2017Äê1ÔÂ7ÈÕ ÏÂÎç3:25:56
+ * @date 2017å¹´1æœˆ7æ—¥ ä¸‹åˆ3:25:56
  */
 public class NewFeatureTester2
 {
     public static void main(String[] args)
     {
-        SayHello sayHello1 =x->System.out.println("Ã»ÓĞÀ¨ºÅµÄ±í´ïÊ½£º"+x);
-        SayHello sayHello2 = (x) -> System.out.println("ÓĞÀ¨ºÅµÄ±í´ïÊ½£º" + x);
+        SayHello sayHello1 = x -> System.out.println("æ²¡æœ‰æ‹¬å·çš„è¡¨è¾¾å¼ï¼š" + x);
+        SayHello sayHello2 = (x) -> System.out.println("æœ‰æ‹¬å·çš„è¡¨è¾¾å¼ï¼š" + x);
         
         sayHello1.sayMesage("hello");
         sayHello2.sayMesage("hello");

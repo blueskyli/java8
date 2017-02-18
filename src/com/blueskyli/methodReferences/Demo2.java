@@ -6,15 +6,15 @@ import java.util.List;
 import java.util.function.Supplier;
 
 /**
- * @Description: ·½·¨ÒıÓÃ
+ * @Description: æ–¹æ³•å¼•ç”¨
  * @author Jack
- * @date 2017Äê1ÔÂ7ÈÕ ÏÂÎç3:56:49
+ * @date 2017å¹´1æœˆ7æ—¥ ä¸‹åˆ3:56:49
  */
 public class Demo2
 {
     public static void main(String[] args)
     {
-        //ÒıÓÃ¹¹Ôìº¯Êı
+        // å¼•ç”¨æ„é€ å‡½æ•°
         PersonFactory factory = new PersonFactory(Person::new);
         List<Person> list = new ArrayList<Person>();
         
@@ -32,14 +32,14 @@ public class Demo2
         System.out.println();
         
         Person[] array = list.toArray(new Person[list.size()]);
-        System.out.println("Ô­¶ÔÏó£º");
+        System.out.println("åŸå¯¹è±¡ï¼š");
         pringArray(array);
         
-        // ÒıÓÃ¾²Ì¬·½·¨
+        // å¼•ç”¨é™æ€æ–¹æ³•
         // Arrays.sort(array, Demo2::myCompare);
-        // µÈÍ¬ÓÚ
+        // ç­‰åŒäº
         Arrays.sort(array, (a, b) -> a.getName().compareTo(b.getName()));
-        System.out.println("ÅÅĞòºó");
+        System.out.println("æ’åºå");
         pringArray(array);
     }
     
@@ -89,7 +89,7 @@ public class Demo2
     
     static class PersonFactory
     {
-        // ÎŞÊäÈë²ÎÊı,·µ»ØTµÄÊµÀı
+        // æ— è¾“å…¥å‚æ•°,è¿”å›Tçš„å®ä¾‹
         private Supplier<Person> supplier;
         
         public PersonFactory(Supplier<Person> supplier)
