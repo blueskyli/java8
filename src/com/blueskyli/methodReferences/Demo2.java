@@ -75,16 +75,6 @@ public class Demo2
         {
             this.name = name;
         }
-        
-        private int compare(Person p1, Person p2)
-        {
-            return p1.getName().compareTo(p2.getName());
-        }
-        
-        private int compareTo(Person p1)
-        {
-            return this.getName().compareTo(p1.getName());
-        }
     }
     
     static class PersonFactory
