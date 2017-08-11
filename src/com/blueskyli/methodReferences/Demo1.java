@@ -7,7 +7,7 @@ import java.util.List;
  * @Description: 方法引用 
  * 方法引用的唯一用途是支持lambda表达式的简写
  * 方法引用仅仅是Lambda的配套服务，主要目的是通过名字来获得Lambda，重复利用已有的方法
- * 方法引用分为四类
+ * 方法引用分为四类 
  * 1，引用静态方法
  *      例子: String::valueOf，对应的Lambda：(s) -> String.valueOf(s) 
  * 2，引用特性对象的实例方法
